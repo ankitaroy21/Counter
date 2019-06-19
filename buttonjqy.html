@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>COUNTER</title>
+<script src="jquery.js"></script>
+<script src="btnjqy.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<style>
+body {
+  padding: 20px;
+}
+#container {
+  height: 100%; width: 100%; overflow: auto;
+}
+div {
+  display: inline-block; height:250px; width:100px;
+  margin: 20px; border: gray; border-style:solid;
+}
+button {
+  float: inline; color: #36CC9B; border: 0; outline: 0;
+  font-weight: bold; font-family: 'Montserrat'; width: 80px;
+  height: 50px; border-radius:21px; background: beige; cursor: pointer;
+}
+.buttonUp {
+  position: relative; top:10px; left:22%; width:40px; height: 40px;
+}
+.buttonDown {
+  position:relative; left:22%; top:10px; width:40px; height: 40px;
+}
+.countClass {
+  display: none; font-weight: bold; width:44px; height: 21px; padding: 0px;
+  position:relative; left:23%; top:10px; margin:0px; text-align: center;
+}
+.buttonSet {
+  display: block; background: transparent; border: 0; outline: 0; 
+}
+.myRectangle {
+  position: relative; left:80%; width: 20px; height: 20px; color: red;
+}
+.resetB {
+  display:block; position: relative; width:100%; top:30px;
+  background: beige; box-sizing: border-box; padding: 2px 6px 3px;
+  border-style: outset; border-color: buttonface; border-image: initial;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    width: 40px; -moz-appearance: textfield;
+    position:relative; text-align: center;
+}
+</style>
+</head>
+<body>
+<button type="button" style="margin:30px" id="addB">Add Counter</button>
+<button type="button" style="margin:30px" id="remB">Remove Counter</button>
+<button type="button" style="margin:30px" id="resB">Reset All Counters</button>
+<div id="container" style="border-style: hidden">
+</div>
+</body>
+</html>
